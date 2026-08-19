@@ -14,17 +14,17 @@ To prepare the data for analysis, we first combined multiple datasets (**train, 
 ### EDA
 Conducted an exploratory data analysis (EDA) to uncover key sales patterns, seasonal trends, and external factors influencing Walmart’s sales. Weekly sales data revealed clear seasonality, with noticeable spikes during major holidays like Thanksgiving and Christmas. Store-wise analysis highlighted variations in sales performance, while correlation analysis helped identify the impact of external factors like fuel prices and CPI. Also detected and examined outliers to distinguish genuine seasonal peaks from anomalies. 
 
-![Image 1](Images/Weekly_Sales_Trend.png)  
+![Image 1](images/Weekly_Sales_Trend.png)  
 
-![Image 2](Images/Holiday_Effect_on_Sales.png)
+![Image 2](images/Holiday_Effect_on_Sales.png)
 
 ### Forecasting
 #### (A) Statistical Methods
 Used Sarima and SARIMAX on a store and dept pair to forecast next 12 week's sales. SARIMA captures seasonality and trends in time-series data. SARIMAX, an extension of SARIMA that incorporates external regressors such as CPI, fuel prices, unemployment and holidays. This improved the model's ability to adjust for external influences, leading to more precise forecasts.
 
-![Image 3](Images/SARIMA_Forecasting.png)
+![Image 3](images/SARIMA_Forecasting.png)
 
-![Image 4](Images/SARIMAX_Forecasting.png)
+![Image 4](images/SARIMAX_Forecasting.png)
 
 
 #### (B) Machine Learning Models
