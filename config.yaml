@@ -1,0 +1,11 @@
+spark:
+  app_name: "Walmart Sales Analysis"
+  master: "local[*]"
+  spark_local_ip: "192.168.1.3"
+
+
+datapaths:
+  features: "Data/features.csv"
+  stores: "Data/stores.csv"
+  train: "Data/train.csv"
+  test: "Data/test.csv"

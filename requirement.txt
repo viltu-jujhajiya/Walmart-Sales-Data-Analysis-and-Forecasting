@@ -6,3 +6,4 @@ scikit-learn==1.6.1
 pmdarima==2.0.3
 statsmodels==0.14.4
 xgboost==3.0.0
+pyyaml==6.0.3
