@@ -9,3 +9,16 @@ datapaths:
   stores: "data/stores.csv"
   train: "data/train.csv"
   test: "data/test.csv"
+
+
+data:
+  #Available Features: ["Store", "Date", "Weekly_Sales", "IsHoliday", "Temperature", "Fuel_Price", "CPI", "Unemployment", "Type", "Size", "DayOfWeek", "Month", "Year", "WeekOfYear", "WeekOfMonth", "lag1", "lag4", "RollingMean_4Weeks"]
+  features: ["Store", "Weekly_Sales", "IsHoliday", "Temperature", "Fuel_Price", "CPI", "Unemployment", "Type", "Size", "DayOfWeek", "Month", "WeekOfYear", "WeekOfMonth", "lag1", "lag4", "RollingMean_4Weeks"]
+  test_features: ["Store", "IsHoliday", "Temperature", "Fuel_Price", "CPI", "Unemployment", "Type", "Size", "DayOfWeek", "Month", "WeekOfYear", "WeekOfMonth", "lag1", "lag4", "RollingMean_4Weeks"]
+  Type_encoding: {"A": 3, "B": 2, "C": 1}
+
+
+model:
+  model_path: "models/xbg_best_model.json"
+  params_path: "models/xbg_best_model_params.json"
+  exhaustive_result_path: "models/xgb_exhaustive_results.csv"
